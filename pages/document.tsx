@@ -1,7 +1,7 @@
 // pages/document.tsx
 import React from 'react';
-import MainLayout from '../app/components/MainLayout';
-import FileUpload from '../app/components/FileUpload';
+import MainLayout from '@/app/Layouts/MainLayout';
+import FileUpload from '@/app/components/FileUpload';
 
 const DocumentPage: React.FC = () => {
   const handleFileSelect = (file: File) => {

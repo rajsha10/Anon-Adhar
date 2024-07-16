@@ -1,4 +1,4 @@
-import MetaMaskButton from './MetaMaskButton';
+import MetaMaskButton from '@/app/components/MetamaskButton';
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
