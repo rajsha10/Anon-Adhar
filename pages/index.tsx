@@ -1,13 +1,12 @@
-// IndexPage.js
-import { useState } from 'react';
-import Home from './Home'; // Adjust the path according to your project structure
+// pages/index.tsx
+import React from 'react';
+import MainLayout from '../app/components/MainLayout';
+import Home from '../app/components/Home';
 
-export default function IndexPage() {
-  const [useTestAadhaar, setUseTestAadhaar] = useState(false);
+const HomePage: React.FC = () => (
+  <MainLayout>
+    <Home />
+  </MainLayout>
+);
 
-  const switchAadhaar = () => {
-    setUseTestAadhaar((prev) => !prev);
-  };
-
-  return <Home setUseTestAadhaar={setUseTestAadhaar} useTestAadhaar={useTestAadhaar} switchAadhaar={switchAadhaar} />;
-}
+export default HomePage;
